@@ -301,7 +301,7 @@
             var returnval = true;
             clearErrors();
             var name = document.forms['myform']["fname"].value;
-            if (name.length < 5) {
+            if (name.length < 3) {
                 seterror("name", "Length of name is too short");
                 returnval = false;
 
@@ -312,7 +312,7 @@
                 returnval = false;
             }
             var email = document.forms['myform']["femail"].value;
-            if (email.length > 20) {
+            if (email.length > 35) {
                 seterror("email", "enter valid email");
                 returnval = false;
             }
